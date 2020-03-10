@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F2157C5C2417D53C0033564D /* ToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2157C5B2417D53C0033564D /* ToDoViewController.swift */; };
+		F2157C5E2417D5460033564D /* InProgressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2157C5D2417D5460033564D /* InProgressViewController.swift */; };
+		F2157C602417D5540033564D /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2157C5F2417D5540033564D /* DoneViewController.swift */; };
 		F2ABA5752416D8AD00643C6F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ABA5742416D8AD00643C6F /* AppDelegate.swift */; };
 		F2ABA5772416D8AD00643C6F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ABA5762416D8AD00643C6F /* SceneDelegate.swift */; };
 		F2ABA5792416D8AD00643C6F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ABA5782416D8AD00643C6F /* ViewController.swift */; };
@@ -17,6 +20,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F2157C5B2417D53C0033564D /* ToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoViewController.swift; sourceTree = "<group>"; };
+		F2157C5D2417D5460033564D /* InProgressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InProgressViewController.swift; sourceTree = "<group>"; };
+		F2157C5F2417D5540033564D /* DoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 		F2ABA5712416D8AD00643C6F /* PhDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2ABA5742416D8AD00643C6F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2ABA5762416D8AD00643C6F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +72,9 @@
 				F2ABA5822416D8AF00643C6F /* LaunchScreen.storyboard */,
 				F2ABA5852416D8AF00643C6F /* Info.plist */,
 				F2ABA57D2416D8AD00643C6F /* PhDownloader.xcdatamodeld */,
+				F2157C5B2417D53C0033564D /* ToDoViewController.swift */,
+				F2157C5D2417D5460033564D /* InProgressViewController.swift */,
+				F2157C5F2417D5540033564D /* DoneViewController.swift */,
 			);
 			path = PhDownloader;
 			sourceTree = "<group>";
@@ -141,7 +150,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2157C602417D5540033564D /* DoneViewController.swift in Sources */,
+				F2157C5C2417D53C0033564D /* ToDoViewController.swift in Sources */,
 				F2ABA57F2416D8AD00643C6F /* PhDownloader.xcdatamodeld in Sources */,
+				F2157C5E2417D5460033564D /* InProgressViewController.swift in Sources */,
 				F2ABA5792416D8AD00643C6F /* ViewController.swift in Sources */,
 				F2ABA5752416D8AD00643C6F /* AppDelegate.swift in Sources */,
 				F2ABA5772416D8AD00643C6F /* SceneDelegate.swift in Sources */,

@@ -24,30 +24,28 @@ class ViewController: UIViewController {
 
     
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        download()
+        
         // Do any additional setup after loading the view.
     }
 
-    
-    struct Recipe: Codable{
-        var name: String
-        var url: URL
-        var ingredientsList: [String]
-        var instructions: String
-    }
+//
+//    func goToDo(){
+//        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+//        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "NextViewController") as! ViewController
+//        self.present(nextViewController, animated:true, completion:nil)
+//    }
     
     func download(){
         print("I'm in download function")
         //get random photo
         let unsplash = "https://api.unsplash.com/photos/random/?client_id=sfuEn6VzVhxMejKp5A3FT9gFvJDX2K4HQ2mp2yFt9OY"
         let unsplash_url = URL(string: unsplash)!
-        let config = URLSessionConfiguration.default
+        let _ = URLSessionConfiguration.default
         let session = URLSession.shared
-        
-//        var imgData : [String] = []
-        
         let task = session.dataTask(with: unsplash_url) { data, response, error in
             // Check for errors
             guard error == nil else {
@@ -55,23 +53,23 @@ class ViewController: UIViewController {
                 return
             }
             // Check that data has been returned
-            guard let content = data else {
-                print("No data found")
-                return
-            }
+        guard let content = data else {
+            print("No data found")
+            return
+        }
             
-            
+        var currentImageData:Data
         do {
             let decoder = JSONDecoder()
             decoder.keyDecodingStrategy = .convertFromSnakeCase
-            let currentImageData = try decoder.decode(Data.self, from: content)
+             currentImageData = try decoder.decode(Data.self, from: content)
             print(currentImageData.self)
             }
         catch let err { print("Err", err)}
-            
         }
     
         task.resume()// execute the HTTP request
+        
     }
 }
 
