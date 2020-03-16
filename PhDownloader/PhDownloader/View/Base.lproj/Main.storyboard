@@ -10,7 +10,7 @@
         <!--In Progress-->
         <scene sceneID="yBS-Xr-GB5">
             <objects>
-                <viewController id="Lkm-Jx-wkn" sceneMemberID="viewController">
+                <viewController id="Lkm-Jx-wkn" customClass="InProgressViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eDY-Ps-Kyj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -79,7 +79,7 @@
         <!--Done-->
         <scene sceneID="ZF1-Yx-Qwo">
             <objects>
-                <viewController id="sFh-HW-Xqv" sceneMemberID="viewController">
+                <viewController id="sFh-HW-Xqv" customClass="DoneViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3ES-PU-1uP">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,20 +132,19 @@
             </objects>
             <point key="canvasLocation" x="253.62318840579712" y="596.65178571428567"/>
         </scene>
-        <!--View Controller-->
+        <!--Display Photo View Controller-->
         <scene sceneID="QAw-fZ-TJ8">
             <objects>
-                <viewController id="AKJ-S3-N3t" sceneMemberID="viewController">
+                <viewController id="AKJ-S3-N3t" customClass="DisplayPhotoViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ywf-SP-Ypu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-gY-yTF">
-                                <rect key="frame" x="69" y="283" width="284" height="285"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="5YC-gY-yTF">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-dz-ON1">
-                                <rect key="frame" x="69" y="157" width="285" height="108"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j9-dz-ON1">
+                                <rect key="frame" x="0.0" y="44" width="414" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -153,8 +152,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="5YC-gY-yTF" firstAttribute="centerX" secondItem="d1l-D3-69V" secondAttribute="centerX" id="Hm3-cC-XAb"/>
-                            <constraint firstItem="5YC-gY-yTF" firstAttribute="centerY" secondItem="d1l-D3-69V" secondAttribute="centerY" id="dvy-Ha-tFF"/>
+                            <constraint firstItem="5YC-gY-yTF" firstAttribute="leading" secondItem="d1l-D3-69V" secondAttribute="leading" id="3hp-K5-BrN"/>
+                            <constraint firstItem="d1l-D3-69V" firstAttribute="trailing" secondItem="5YC-gY-yTF" secondAttribute="trailing" id="HbJ-wM-nhv"/>
+                            <constraint firstItem="7j9-dz-ON1" firstAttribute="leading" secondItem="d1l-D3-69V" secondAttribute="leading" id="Nep-mx-qi9"/>
+                            <constraint firstItem="d1l-D3-69V" firstAttribute="trailing" secondItem="7j9-dz-ON1" secondAttribute="trailing" id="NmV-70-7BO"/>
+                            <constraint firstItem="7j9-dz-ON1" firstAttribute="top" secondItem="d1l-D3-69V" secondAttribute="top" id="ZG2-qc-XIw"/>
+                            <constraint firstItem="5YC-gY-yTF" firstAttribute="top" secondItem="7j9-dz-ON1" secondAttribute="bottom" constant="8" symbolic="YES" id="eFJ-2W-QSg"/>
+                            <constraint firstItem="d1l-D3-69V" firstAttribute="bottom" secondItem="5YC-gY-yTF" secondAttribute="bottom" id="oTl-mK-BY3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d1l-D3-69V"/>
                     </view>
@@ -166,7 +170,7 @@
         <!--To Do-->
         <scene sceneID="Blg-tD-fok">
             <objects>
-                <viewController id="iZw-9i-3cy" sceneMemberID="viewController">
+                <viewController id="iZw-9i-3cy" customClass="ToDoViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bwD-N2-rIu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

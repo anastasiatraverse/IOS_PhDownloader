@@ -2,7 +2,7 @@
 //  InProgressTableViewCell.swift
 //  PhDownloader
 //
-//  Created by Анастасия Траверсе on 16.03.2020.
+//  Created by Анастасия Траверсе.
 //  Copyright © 2020 Анастасия Траверсе. All rights reserved.
 //
 
@@ -14,6 +14,7 @@ class InProgressTableViewCell: UITableViewCell {
     @IBOutlet weak var authorLB: UILabel!
     @IBOutlet weak var progressLB: UILabel!
     @IBOutlet weak var progressVW: UIProgressView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
