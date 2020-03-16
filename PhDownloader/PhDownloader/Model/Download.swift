@@ -9,5 +9,13 @@
 import UIKit
 
 class Download: NSObject {
-
+    var isDownloading = false
+    var progress: Float = 0
+    var resume: Data?
+    var task: URLSessionDownloadTask?
+    var photo: Photo
+    
+    init(photo: Photo) {
+      self.photo = photo
+    }
 }

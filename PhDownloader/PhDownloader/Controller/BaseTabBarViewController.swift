@@ -10,6 +10,8 @@ import UIKit
 
 class BaseTabBarViewController: UITabBarController {
 
+    let photosPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }

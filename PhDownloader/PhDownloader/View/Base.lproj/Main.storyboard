@@ -218,6 +218,9 @@
                         <viewLayoutGuide key="safeArea" id="bkt-HY-cma"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="To Do" image="tray.fill" catalog="system" id="rsm-Lo-QEq"/>
+                    <connections>
+                        <outlet property="toDoTableView" destination="7hi-FT-qae" id="ewO-7Q-gPM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xhg-iB-ESB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
