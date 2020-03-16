@@ -71,6 +71,9 @@
                         <viewLayoutGuide key="safeArea" id="Gag-H3-3Pm"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="In Progress" image="playpause.fill" catalog="system" id="imz-9J-drf"/>
+                    <connections>
+                        <outlet property="inProgressTableView" destination="dss-mD-HxB" id="scl-GD-rpT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gYj-xu-ZL8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -127,6 +130,9 @@
                         <viewLayoutGuide key="safeArea" id="Wro-zg-xH4"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Done" image="checkmark.seal.fill" catalog="system" id="zCo-pn-lo0"/>
+                    <connections>
+                        <outlet property="doneTableView" destination="TsT-G1-fcW" id="W72-LE-Lzz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="axE-Pb-0sc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -226,10 +232,10 @@
             </objects>
             <point key="canvasLocation" x="-1394.2028985507247" y="596.65178571428567"/>
         </scene>
-        <!--Base Tab Bar View Controller-->
+        <!--tabBarController-->
         <scene sceneID="oOM-kc-hbI">
             <objects>
-                <tabBarController id="LPw-Bo-QVq" customClass="BaseTabBarViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarController" title="tabBarController" id="LPw-Bo-QVq" customClass="BaseTabBarViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JJi-o1-VN0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

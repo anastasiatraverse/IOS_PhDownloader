@@ -5,15 +5,16 @@
 //  Created by Анастасия Траверсе on 16.03.2020.
 //  Copyright © 2020 Анастасия Траверсе. All rights reserved.
 //
-
+import Foundation
 import UIKit
 
-class Photo: NSObject, Codable{
+class Photo: NSObject{
     var id:String
     var author:String
     var url:String
     var download_url:String
     
+    var image: UIImage?
     var isDownloading:Bool = false
     
     init(id:String, author:String, url:String, download_url:String) {
@@ -23,3 +24,4 @@ class Photo: NSObject, Codable{
         self.download_url = download_url
     }
 }
+  

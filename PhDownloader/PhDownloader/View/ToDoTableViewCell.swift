@@ -22,4 +22,10 @@ class ToDoTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
     }
     
+    func setCell(pht: Photo){
+        imageCellVM = pht.image
+        authorLB.text = pht.author
+    }
+    
+   
 }

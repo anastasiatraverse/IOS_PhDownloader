@@ -12,15 +12,17 @@ class DoneTableViewCell: UITableViewCell {
 
     @IBOutlet weak var doneImageVW: UIImageView!
     @IBOutlet weak var authorLB: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
+    func setCell(pht: Photo){
+        doneImageVW.image = pht.image
+        authorLB.text = pht.author
+    }
 }
