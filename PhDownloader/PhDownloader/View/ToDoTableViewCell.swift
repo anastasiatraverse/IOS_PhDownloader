@@ -23,7 +23,7 @@ class ToDoTableViewCell: UITableViewCell {
     }
     
     func setCell(pht: Photo){
-        imageCellVM = pht.image
+        imageCellVM.image = pht.image
         authorLB.text = pht.author
     }
     

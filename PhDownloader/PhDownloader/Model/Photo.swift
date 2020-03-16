@@ -16,6 +16,7 @@ class Photo: NSObject{
     
     var image: UIImage?
     var isDownloading:Bool = false
+    var status:String = "todo"
     
     init(id:String, author:String, url:String, download_url:String) {
         self.id = id

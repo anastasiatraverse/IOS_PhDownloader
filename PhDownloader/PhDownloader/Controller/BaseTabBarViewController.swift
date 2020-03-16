@@ -10,14 +10,22 @@ import UIKit
 
 class BaseTabBarViewController: UITabBarController {
 
-    let photosPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+    
     
     var photoList:[Photo] = []
     var inProgressPhotoList:[Photo] = []
     var donePhotoList: [Photo] = []
     
+    var downloadService = DownloadService()
+    
+    lazy var downloadsSession: URLSession = {
+        let configuration = URLSessionConfiguration.background(withIdentifier: "back")
+        return URLSession(configuration: configuration, delegate: self as? URLSessionDelegate, delegateQueue: nil)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        downloadService.downloadSession = downloadsSession
     }
     
 }

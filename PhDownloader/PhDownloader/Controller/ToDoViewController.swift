@@ -11,7 +11,6 @@ import UIKit
 class ToDoViewController: UIViewController {
 
     @IBOutlet weak var toDoTableView: UITableView!
-    
     let downloadLists = DownloadPhotoListService()
     
     override func viewDidLoad() {
@@ -58,4 +57,13 @@ extension ToDoViewController: UITableViewDelegate, UITableViewDataSource{
         cell.setCell(pht: photo)
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let basetab = tabBarController as! BaseTabBarViewController
+        basetab.photoList[indexPath.row].status = "downloading"
+        basetab.inProgressPhotoList.append(basetab.photoList[indexPath.row])
+        basetab.photoList.remove(at: indexPath.row)
+        toDoTableView.reloadData()
+    }
+    
 }

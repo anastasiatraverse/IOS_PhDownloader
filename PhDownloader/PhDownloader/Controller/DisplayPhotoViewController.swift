@@ -10,8 +10,10 @@ import UIKit
 
 class DisplayPhotoViewController: UIViewController {
 
+    let photourl : String = ""
+    @IBOutlet weak var photoView: UIImageView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        photoView.image = UIImage(contentsOfFile: photourl)
     }
-    
 }
