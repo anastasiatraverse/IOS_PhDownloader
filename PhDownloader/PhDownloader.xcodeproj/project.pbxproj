@@ -23,6 +23,7 @@
 		F2DC66E1241FA19700F82332 /* Download.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66E0241FA19700F82332 /* Download.swift */; };
 		F2DC66E4241FA22000F82332 /* DownloadPhotoListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66E3241FA22000F82332 /* DownloadPhotoListService.swift */; };
 		F2DC66E6241FA22F00F82332 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66E5241FA22F00F82332 /* DownloadService.swift */; };
+		F2DC66E8241FA5E000F82332 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66E7241FA5E000F82332 /* BaseTabBarViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		F2DC66E0241FA19700F82332 /* Download.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Download.swift; sourceTree = "<group>"; };
 		F2DC66E3241FA22000F82332 /* DownloadPhotoListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadPhotoListService.swift; sourceTree = "<group>"; };
 		F2DC66E5241FA22F00F82332 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		F2DC66E7241FA5E000F82332 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +115,7 @@
 				F2DC66D8241FA0CE00F82332 /* InProgressViewController.swift */,
 				F2DC66DA241FA0DA00F82332 /* DoneViewController.swift */,
 				F2DC66DC241FA0EA00F82332 /* DisplayPhotoViewController.swift */,
+				F2DC66E7241FA5E000F82332 /* BaseTabBarViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -215,6 +218,7 @@
 				F2DC66D9241FA0CE00F82332 /* InProgressViewController.swift in Sources */,
 				F2DC66B8241F921800F82332 /* SceneDelegate.swift in Sources */,
 				F2DC66CC241F972200F82332 /* ToDoTableViewCell.swift in Sources */,
+				F2DC66E8241FA5E000F82332 /* BaseTabBarViewController.swift in Sources */,
 				F2DC66DF241FA18D00F82332 /* Photo.swift in Sources */,
 				F2DC66DB241FA0DA00F82332 /* DoneViewController.swift in Sources */,
 				F2DC66E4241FA22000F82332 /* DownloadPhotoListService.swift in Sources */,

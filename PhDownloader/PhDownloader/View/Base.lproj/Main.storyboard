@@ -223,10 +223,10 @@
             </objects>
             <point key="canvasLocation" x="-1394.2028985507247" y="596.65178571428567"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Base Tab Bar View Controller-->
         <scene sceneID="oOM-kc-hbI">
             <objects>
-                <tabBarController id="LPw-Bo-QVq" sceneMemberID="viewController">
+                <tabBarController id="LPw-Bo-QVq" customClass="BaseTabBarViewController" customModule="PhDownloader" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JJi-o1-VN0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
