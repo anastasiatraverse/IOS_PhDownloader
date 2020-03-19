@@ -10,8 +10,6 @@ import UIKit
 
 class BaseTabBarViewController: UITabBarController {
 
-    
-    
     var photoList:[Photo] = []
     var inProgressPhotoList:[Photo] = []
     var donePhotoList: [Photo] = []

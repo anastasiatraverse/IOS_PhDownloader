@@ -11,18 +11,22 @@ import UIKit
 class Photo: NSObject{
     var id:String
     var author:String
-    var url:String
-    var download_url:String
+    var url:URL
+    var download_url: URL
     
     var image: UIImage?
     var isDownloading:Bool = false
     var status:String = "todo"
     
-    init(id:String, author:String, url:String, download_url:String) {
+    var index: Int
+    var downloaded: Bool = false
+    
+    init(id:String, author:String, url:URL, download_url:URL, index: Int) {
         self.id = id
         self.author = author
         self.url = url
         self.download_url = download_url
+        self.index = index
     }
 }
   

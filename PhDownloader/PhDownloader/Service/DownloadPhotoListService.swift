@@ -49,15 +49,20 @@ class DownloadPhotoListService{
             print("JSON Error: \(parseError.localizedDescription)")
             return
         }
+        
         guard let array = response else {return}
+        
+        var index = 0
         for imageDictionary in array{
             if let imageDictionary = imageDictionary as? [String:Any],
                 let id = imageDictionary["id"] as? String,
                 let author = imageDictionary["author"] as? String,
-                let url = imageDictionary["url"] as? String,
-                let download_url = imageDictionary["download_url"] as? String {
-                photos.append(Photo(id: id, author: author, url: url, download_url: download_url))
+                let url = imageDictionary["url"] as? URL,
+                let download_url = imageDictionary["download_url"] as? URL {
+                photos.append(Photo(id: id, author: author, url: url, download_url: download_url, index: index))
+                index += 1
             }
+            
         }
     }
 }

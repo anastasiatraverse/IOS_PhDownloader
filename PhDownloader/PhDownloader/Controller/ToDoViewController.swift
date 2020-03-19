@@ -36,12 +36,11 @@ class ToDoViewController: UIViewController {
     func getImageByURL(){
         let basetab = tabBarController as! BaseTabBarViewController
         for i in basetab.photoList{
-            if let mainURL = URL(string: i.download_url){
-                guard let data = try? Data(contentsOf: mainURL) else {return}
-                i.image = UIImage(data: data) ?? UIImage(contentsOfFile: "ucu.png")!
-            }
+            guard let data = try? Data(contentsOf: i.download_url) else {return}
+            i.image = UIImage(data: data) ?? UIImage(contentsOfFile: "ucu.png")!
         }
     }
+    
 }
 
 extension ToDoViewController: UITableViewDelegate, UITableViewDataSource{
