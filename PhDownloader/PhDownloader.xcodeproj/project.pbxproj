@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F232DAA4242366C000D4C775 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F232DAA3242366C000D4C775 /* TestViewController.swift */; };
 		F2DC66B6241F921800F82332 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66B5241F921800F82332 /* AppDelegate.swift */; };
 		F2DC66B8241F921800F82332 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2DC66B7241F921800F82332 /* SceneDelegate.swift */; };
 		F2DC66BD241F921800F82332 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F2DC66BB241F921800F82332 /* Main.storyboard */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F232DAA3242366C000D4C775 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		F2DC66B2241F921800F82332 /* PhDownloader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhDownloader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2DC66B5241F921800F82332 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2DC66B7241F921800F82332 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,6 +118,7 @@
 				F2DC66DA241FA0DA00F82332 /* DoneViewController.swift */,
 				F2DC66DC241FA0EA00F82332 /* DisplayPhotoViewController.swift */,
 				F2DC66E7241FA5E000F82332 /* BaseTabBarViewController.swift */,
+				F232DAA3242366C000D4C775 /* TestViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -221,6 +224,7 @@
 				F2DC66E8241FA5E000F82332 /* BaseTabBarViewController.swift in Sources */,
 				F2DC66DF241FA18D00F82332 /* Photo.swift in Sources */,
 				F2DC66DB241FA0DA00F82332 /* DoneViewController.swift in Sources */,
+				F232DAA4242366C000D4C775 /* TestViewController.swift in Sources */,
 				F2DC66E4241FA22000F82332 /* DownloadPhotoListService.swift in Sources */,
 				F2DC66E1241FA19700F82332 /* Download.swift in Sources */,
 				F2DC66DD241FA0EA00F82332 /* DisplayPhotoViewController.swift in Sources */,

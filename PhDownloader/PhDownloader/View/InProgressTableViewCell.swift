@@ -27,4 +27,9 @@ class InProgressTableViewCell: UITableViewCell {
         inProgressImageVW.image = pht.image
         authorLB.text = pht.author
     }
+    
+    func updateCell(progress: Float, size: String){
+        progressVW.progress = progress
+        progressLB.text = String(format: "%.1f%% / %@",  progress * 100, size)
+    }
 }
